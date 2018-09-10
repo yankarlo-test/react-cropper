@@ -50,10 +50,10 @@ class ReactCropper extends Component {
 
   componentDidMount() {
     const options = Object.keys(this.props)
-    .filter(propKey => optionProps.indexOf(propKey) !== -1)
-    .reduce((prevOptions, propKey) =>
-      Object.assign({}, prevOptions, { [propKey]: this.props[propKey] })
-    , {});
+      .filter(propKey => optionProps.indexOf(propKey) !== -1)
+      .reduce((prevOptions, propKey) =>
+        Object.assign({}, prevOptions, { [propKey]: this.props[propKey] })
+        , {});
     this.cropper = new Cropper(this.img, options);
   }
 
@@ -240,7 +240,6 @@ class ReactCropper extends Component {
     return (
       <div
         src={null}
-        crossOrigin={null}
         alt={null}
         style={this.props.style}
         className={this.props.className}
