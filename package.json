@@ -11,8 +11,7 @@
     "prepublish": "npm run clean && npm run build",
     "prebuild": "npm run lint",
     "build-example": "npm run build && webpack --config webpack.config.js",
-    "start": "babel-node server.js",
-    "postinstall": "npm run build"
+    "start": "babel-node server.js"
   },
   "author": "Fong Kuanghuei <waneblade@gmail.com>",
   "homepage": "http://roadmanfong.github.io/react-cropper/",
